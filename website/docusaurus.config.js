@@ -13,15 +13,14 @@ module.exports = {
     navbar: {
       title: 'Azure Machine Learning',
       logo: {
-        alt: 'AML Logo',
+        alt: 'Azure ML Logo',
         src: 'img/logo.svg',
       },
       items: [
-        {to: 'docs/cheatsheet/', label: 'Cheat Sheet', position: 'left'},
-        {to: 'docs/vs-code-snippets/snippets', label: 'Snippets', position: 'left'},
-        // {to: 'docs/templates/', label: 'Templates', position: 'left'},
-        // {to: 'blog', label: 'Blog', position: 'left'},
-        // {href: 'https://github.com/Azure/azureml-web', label: 'GitHub', position: 'right',
+        {to: 'docs/cheatsheets/', label: 'Overview', position: 'left'},
+        {to: 'docs/cheatsheets/python', label: 'Python SDK', position: 'left'},
+        {to: 'docs/cheatsheets/cli', label: 'CLI (Preview)', position: 'left'},
+        {href: 'https://github.com/lostmygithubaccount/azureml-cheatsheets', label: 'GitHub', position: 'right'},
       ],
     },
     footer: {

@@ -7,38 +7,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
 const features = [
-  {
-    title: 'Cheat Sheet',
-    pageUrl: 'docs/cheatsheet',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
-    description: (
-      <>
-        A cheat sheet for common use cases with AML.
-        Get 80% of what you need in 20% of the documentation.
-      </>
-    ),
-  },
-  {
-    title: 'Distributed GPU Training',
-    pageUrl: 'docs/cheatsheet/distributed-training',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
-    description: (
-      <>
-        Guide to getting your distributed training code running in Azure ML.
-      </>
-    ),
-  },
-  {
-    title: 'Environments',
-    pageUrl: 'docs/cheatsheet/environment',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
-    description: (
-      <>
-        Set up and manage your Python environments and docker images
-        in Azure ML.
-      </>
-    ),
-  },
 ];
 
 function Feature({imageUrl, title, description, pageUrl}) {
@@ -62,7 +30,7 @@ function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="A user guide to Azure ML <head />">
+      description="Cheat sheets for Azure ML<head />">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
@@ -73,7 +41,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/cheatsheet/')}>
+              to={useBaseUrl('docs/cheatsheets/')}>
               Get Started
             </Link>
           </div>
