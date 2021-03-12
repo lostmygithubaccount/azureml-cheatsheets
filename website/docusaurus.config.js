@@ -69,5 +69,39 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Microsoft`,
     },
+    algolia: {
+      // search only api key: https://docsearch.algolia.com/docs/faq/#can-i-share-the-apikey-in-my-repo
+      apiKey: '8cdd3d909edd00501899b929541d6ce7',
+      indexName: 'azureml-web',
+      searchParameters: {},
+      placeholder: 'Search cheat sheet'
+    }
+  },
+  plugins: [path.resolve(__dirname, 'plugins/appinsights')], // uncomment for appinsights
+  presets: [
+    [
+      '@docusaurus/preset-classic',
+      {
+        docs: {
+          sidebarPath: require.resolve('./sidebars.js'),
+          // Please change this to your repo.
+          editUrl:
+            'https://github.com/Azure/azureml-web/tree/main/website/',
+        },
+        cookbook: {
+          sidebarPath: require.resolve('./sidebars.js'),
+        },
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          editUrl:
+            'https://github.com/Azure/azureml-web/tree/main/website/blog',
+        },
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
+        },
+      },
+    ],
+  ],
   },
 };
