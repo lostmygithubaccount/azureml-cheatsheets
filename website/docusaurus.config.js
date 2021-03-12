@@ -2,18 +2,18 @@ const path = require('path');
 
 module.exports = {
   title: 'Azure Machine Learning',
-  tagline: 'Open source documentation for Azure ML',
-  url: 'https://github.com/Azure/',
-  baseUrl: '/azureml-web/',
+  tagline: 'Cheat sheets for Azure Machine Learning',
+  url: 'https://github.com/lostmygithubaccount/',
+  baseUrl: '/azureml-cheatsheets/',
   onBrokenLinks: 'ignore',
   favicon: 'img/logo.svg',
-  organizationName: 'Azure', // Usually your GitHub org/user name.
-  projectName: 'azureml-web', // Usually your repo name.
+  organizationName: 'lostmygithubaccount', // Usually your GitHub org/user name.
+  projectName: 'azureml-cheatsheets', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Azure Machine Learning',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'AML Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -58,7 +58,7 @@ module.exports = {
           items: [
             {
               label: 'Website Repo',
-              href: 'https://github.com/Azure/azureml-web',
+              href: 'https://github.com/lostmygithubaccount/azureml-cheatsheets',
             },
             {
               label: 'Azure ML Examples Repo',
@@ -69,38 +69,5 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Microsoft`,
     },
-    algolia: {
-      // search only api key: https://docsearch.algolia.com/docs/faq/#can-i-share-the-apikey-in-my-repo
-      apiKey: '8cdd3d909edd00501899b929541d6ce7',
-      indexName: 'azureml-web',
-      searchParameters: {},
-      placeholder: 'Search cheat sheet'
-    }
   },
-  plugins: [path.resolve(__dirname, 'plugins/appinsights')], // uncomment for appinsights
-  presets: [
-    [
-      '@docusaurus/preset-classic',
-      {
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/Azure/azureml-web/tree/main/website/',
-        },
-        cookbook: {
-          sidebarPath: require.resolve('./sidebars.js'),
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/Azure/azureml-web/tree/main/website/blog',
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      },
-    ],
-  ],
 };
