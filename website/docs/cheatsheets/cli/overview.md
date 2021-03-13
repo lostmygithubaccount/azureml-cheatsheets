@@ -1,5 +1,5 @@
 ---
-title: CLI
+title: Overview
 id: overview
 slug: /cheatsheets/cli/
 description: Overview of cli cheat sheets for Azure Machine Learning
