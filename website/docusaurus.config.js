@@ -17,7 +17,7 @@ module.exports = {
         src: 'img/logo.svg',
       },
       items: [
-        {to: 'docs/cheatsheets/', label: 'Overview', position: 'left'},
+        {to: 'docs/overview', label: 'Overview', position: 'left'},
         {to: 'docs/cheatsheets/python', label: 'Python SDK', position: 'left'},
         {to: 'docs/cheatsheets/cli', label: 'CLI (Preview)', position: 'left'},
         {to: 'docs/contributing', label: 'Contributing', position: 'right'},

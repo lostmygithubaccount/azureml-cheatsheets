@@ -1,7 +1,7 @@
 ---
 title: Cheat sheets
-id: cheatsheets
-slug: /cheatsheets/
+id: overview
+slug: /overview/
 description: Overview of cheat sheets for Azure Machine Learning
 ---
 
