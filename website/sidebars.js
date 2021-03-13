@@ -1,5 +1,5 @@
 module.exports = {
-  v1Sidebar: {
+  pythonSidebar: {
     'Python SDK': [
       {
         type: 'doc',
@@ -13,8 +13,8 @@ module.exports = {
       },
     ],
   },
-  v2Sidebar: {
-    'Command Line Interface (CLI)': [
+  cliSidebar: {
+    'CLI': [
       {
         type: 'doc',
         id: 'cheatsheets/cli/overview'
