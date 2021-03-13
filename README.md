@@ -8,43 +8,20 @@ This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern 
 
 ##  Contributions
 
-Make PR's against the `main` branch
+Make PRs against the `main` branch.
 
 ```bash
 git clone git@github.com:lostmygithubaccount/azureml-cheatsheets.git
 cd azureml-examples
 git checkout -b user/contrib
+...
+gh pr create
 ```
 
 - When a PR arrives against `main` GitHub actions (deploy) will test the build is successful
 - When the PR is merged the change will be automatically deployed to `gh-pages` branch (and the webpage will be updated)
 
-99% of contributions should only need the following:
-
-# TODO: update
-
-- Add markdown files to the `website/docs` folder
-- Update the `sidebar.js` file to add a page to the sidebar
-- Put any images in `website/docs/img/` and refer to them like this: `![](img/create-compute.png)`
-
-If you need to do anything more than adding a new page to the sidebar (e.g.
-modify the nav bar) then a) please refer to [Docusaurus 2](https://v2.docusaurus.io/).
-
-### Previewing Changes Locally
-
-- Install npm and yarn: see [docusaurus2 webpage](https://v2.docusaurus.io/docs/installation)
-
-- First time Docusaurus2 installation
-    ```bash
-    cd website
-    npm install
-    ```
-
-- Run local server while developing:
-    ```bash
-    cd website
-    yarn start
-    ```
+See the [Contributing Guide](https://lostmygithubaccount.github.io/azureml-cheatsheets/docs/contributing) for details.
 
 ## Deployment
 
@@ -74,3 +51,6 @@ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
 
+## Code of Conduct
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). Please see the [code of conduct](CODE_OF_CONDUCT.md) for details.

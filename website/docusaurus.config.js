@@ -20,7 +20,7 @@ module.exports = {
         {to: 'docs/cheatsheets/', label: 'Overview', position: 'left'},
         {to: 'docs/cheatsheets/python', label: 'Python SDK', position: 'left'},
         {to: 'docs/cheatsheets/cli', label: 'CLI (Preview)', position: 'left'},
-        {href: 'https://github.com/lostmygithubaccount/azureml-cheatsheets', label: 'GitHub', position: 'right'},
+        {to: 'docs/contributing', label: 'Contributing', position: 'right'},
       ],
     },
     footer: {
@@ -30,11 +30,11 @@ module.exports = {
           title: 'Reference',
           items: [
             {
-              label: 'Microsoft Docs',
+              label: 'Microsoft docs',
               href: 'https://docs.microsoft.com/azure/machine-learning',
             },
             {
-              label: 'API Documentation',
+              label: 'Python SDK',
               href: 'https://docs.microsoft.com/python/api/overview/azure/ml/?view=azure-ml-py'
             }
           ],
@@ -56,11 +56,11 @@ module.exports = {
           title: 'Code',
           items: [
             {
-              label: 'Website Repo',
+              label: 'Website',
               href: 'https://github.com/lostmygithubaccount/azureml-cheatsheets',
             },
             {
-              label: 'Azure ML Examples Repo',
+              label: 'Examples',
               href: 'https://github.com/Azure/azureml-examples',
             },
           ],
@@ -85,16 +85,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/Azure/azureml-web/tree/main/website/',
-        },
-        cookbook: {
-          sidebarPath: require.resolve('./sidebars.js'),
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/Azure/azureml-web/tree/main/website/blog',
+            'https://github.com/lostmygithubaccount/azureml-cheatsheets/tree/main/website/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
